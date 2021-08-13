@@ -1,0 +1,50 @@
+/* Nav */
+.navbar {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  grid-template-columns: 3fr 1fr;
+  background: var(--marron-oscuro);
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar .nav {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.navbar .nav-log {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: flex-end;
+}
+
+/* Portada */
+.portada {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Cards */
+.card_contenedor {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  position: relative;
+  clear: both;
+}
+
+.card_contenedor .card_personaje {
+}
+
+.card_contenedor .card {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
