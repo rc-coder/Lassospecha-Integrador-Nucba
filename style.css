@@ -8,10 +8,10 @@
   top: 0;
   width: 100%;
   position: fixed;
-  background-image: url(./assets/brown-bricks-background-macro-brown-bricks-brown-brickwall-bricks-textures.jpg);
+  background: var(--marron-oscuro);
   z-index: 1;
-  padding: 1rem;
   font-size: 2rem;
+  padding: 2rem;
 }
 
 .navbar .nav {
@@ -29,11 +29,70 @@
   justify-content: flex-end;
 }
 
-/* Portada */
-.portada {
+/* top */
+
+.top_titulo {
+  font: 400 2rem/1.5 "Neuton";
+  background: url(./assets/Lasso\ portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.top_titulo p {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5rem 0rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  background: rgb(27, 26, 23);
+  background: linear-gradient(
+    180deg,
+    rgba(27, 26, 23, 0.3) 0%,
+    rgba(201, 201, 201, 0.3) 30%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(201, 201, 201, 0.3) 70%,
+    rgba(27, 26, 23, 0.3) 100%
+  );
+}
+
+.top_titulo span {
+  font: 700 5rem/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25rem 0 0.325rem;
   display: block;
-  max-width: 100%;
-  height: auto;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+
+  background: url(./assets/fondoanimado.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /* Presentación */
@@ -122,24 +181,31 @@
 .info {
   display: grid;
   grid-template-areas:
-    "info_titulo info_titulo"
-    "info_descripcion info_1"
-    "info_descripcion info_2"
+    "info_descripcion1 info_1"
+    "info_2 info_descripcion2"
     "info_trailer info_poster";
+  background: #000;
+  align-items: center;
+  justify-content: center;
 }
 
-.info_titulo {
-  grid-area: info_titulo;
-  justify-self: center;
+.info_descripcion1 {
+  grid-area: info_descripcion1;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
-.info_descripcion {
-  grid-area: info_descripcion;
+.info_descripcion2 {
+  grid-area: info_descripcion2;
+  text-align: center;
 }
 
 .info_1 {
   grid-area: info_1;
-  width: 500px;
+  width: 450px;
 }
 
 .info_1 img {
@@ -149,7 +215,7 @@
 
 .info_2 {
   grid-area: info_2;
-  width: 500px;
+  width: 450px;
 }
 
 .info_2 img {
@@ -163,7 +229,7 @@
 
 .info_poster {
   grid-area: info_poster;
-  width: 500px;
+  width: 450px;
 }
 
 .info_poster img {
