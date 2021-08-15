@@ -8,6 +8,10 @@
   top: 0;
   width: 100%;
   position: fixed;
+  background-image: url(./assets/brown-bricks-background-macro-brown-bricks-brown-brickwall-bricks-textures.jpg);
+  z-index: 1;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 .navbar .nav {
@@ -32,19 +36,137 @@
   height: auto;
 }
 
+/* Presentación */
+.presentacion {
+  display: grid;
+  grid-template-columns: 300px auto;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.presentacion .logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Cards */
 .card_contenedor {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  position: relative;
-  clear: both;
+  scrollbar-color: #666 #201c29;
+  scrollbar-gutter: always;
+  padding: 1.9rem;
+  padding-left: 4rem;
 }
 
-.card_contenedor .card_personaje {
+.card_contenedor .card_imagen {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_contenedor .card_imagen .card_personaje {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5px;
 }
 
 .card_contenedor .card {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-rows: 300px 1fr;
+  min-width: 350px;
+  min-height: 350px;
+  background: var(--cream);
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  transition: all 0.2s;
+  position: relative;
+  clear: both;
+  box-shadow: -2rem 0 3rem -2rem #000;
+}
+
+.card_contenedor .card:hover {
+  transform: translate(-5px, -10px) rotate(3deg);
+}
+
+.card_contenedor .card:hover ~ .card {
+  transform: translateX(150px);
+}
+
+.card_contenedor .card:not(:first-child) {
+  margin-left: -180px;
+}
+
+.card_contenedor .card .card_info h2,
+.card_contenedor .card .card_info p {
+  text-align: center;
+  color: black;
+  font-family: "Permanent Marker", cursive;
+}
+
+.card_contenedor .card .card_info h2 {
+  font-size: 3rem;
+}
+
+.card_contenedor .card .card_info p {
+  font-size: 1.3rem;
+  font-weight: 100rem;
+}
+
+/* info */
+.info {
+  display: grid;
+  grid-template-areas:
+    "info_titulo info_titulo"
+    "info_descripcion info_1"
+    "info_descripcion info_2"
+    "info_trailer info_poster";
+}
+
+.info_titulo {
+  grid-area: info_titulo;
+  justify-self: center;
+}
+
+.info_descripcion {
+  grid-area: info_descripcion;
+}
+
+.info_1 {
+  grid-area: info_1;
+  width: 500px;
+}
+
+.info_1 img {
+  max-width: 100%;
+  width: auto;
+}
+
+.info_2 {
+  grid-area: info_2;
+  width: 500px;
+}
+
+.info_2 img {
+  max-width: 100%;
+  width: auto;
+}
+
+.info_trailer {
+  grid-area: info_trailer;
+}
+
+.info_poster {
+  grid-area: info_poster;
+  width: 500px;
+}
+
+.info_poster img {
+  max-width: 100%;
+  width: auto;
 }
