@@ -26,14 +26,14 @@
         <header>
             <nav class="navbar">
               <ul class="nav">
-                <li><a href="#">Sección 1</a></li>
-                <li><a href="#">Sección 2</a></li>
-                <li><a href="#">Sección 3</a></li>
-                <li><a href="#">Sección 4</a></li>
+                <li><a href="#feat"><i class="fas fa-question-circle"></i> <span class="borrar">¿Qué es?</span></a></li>
+                <li><a href="#personajes"><i class="fas fa-user-friends"></i> <span class="borrar">Personajes</span></a></li>
+                <li><a href="#boletos"><i class="fas fa-ticket-alt"></i> <span class="borrar">Boletos</span></a></li>
+                <li><a href="#musica"><i class="fas fa-music"></i> <span class="borrar">Lassotify</span></a></li>
               </ul>
-              <ul class="nav-log">
-                <li><a href="">Log In</a></li>
-                <li><a href="">Registrate</a></li>
+              <ul class="nav_log">
+                <li><a href=""><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+                <li><a href=""><i class="fas fa-id-card"></i> Registrate</a></li>
               </ul>
             </nav>
             <div class="top">
@@ -48,44 +48,64 @@
             </div>
           </div>
         </header>
-            <div class="info">
-              <section class="info_descripcion1">
-                <h2>¡Bienvenido al primer concierto jugable de toda la historia!</h2>
+            <div class="info_contenedor">
+              <div class="info">
+                <div class="info_poster">
+                  <img src="./assets/poster.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="info_texto">
+                  <h2>¡El primer concierto jugable de toda la historia!</h2>
                   <p>Basado en el popular juego de mesa, Clue, deberás ayudar a Lasso a visitar 9 locaciones e interrogar a 6 sospechosos para averiguar que le pasó a Agatha Hall.</p>
                     <p>Toda esta experiencia cantando las canciones de Lasso, obvio.</p>
-              </section>
-              <section class="info_descripcion2">
-                <h2>Tablero del juego</h2>
-              </section>
-              <section class="info_1">
-                <div>
-                <img src="./assets/Info2.jpg" alt="">
+                </div>
+                <section class="info_features" id="feat">
+                  <h2>Todo lo que debes saber
+                  </h2>
+                <div class="icon"> <i class="far fa-clock fa-3x"></i> </div>
+                  <div class="feat">
+                    <p>Disponible por 24 horas<p>
+                  </div>
+                  <div class="icon"> <i class="fas fa-globe-americas fa-3x"></i> </div>
+                  <div class="feat">
+                    <p>En Streaming para todo el mundo y jugable en cualquier dispositivo, tablet o PC.<p>
+                   </div>
+                   <div class="icon"> <i class="fas fa-gift fa-3x"></i> </div>
+                  <div class="feat">
+                    <p>El jugador que resuelva el crimen mas rápido ganará un premio<p>
+                  </div>  
+                  <div class="icon"> <i class="fas fa-book fa-3x"></i> </div>
+                  <div class="feat">
+                    <p>En la biblioteca?<p>
+                  </div>  
+                  <div class="icon"> <i class="fas fa-couch fa-3x"></i> </div>
+                  <div class="feat">
+                    <p>En el living?<p>
+                  </div>  
+                  <div class="icon"> <i class="fas fa-car fa-3x"></i> </div>
+                  <div class="feat">
+                    <p>El chofer?<p>
+                  </div>  
+                  <div class="icon"> <i class="fas fa-skull-crossbones fa-3x"></i> </div>
+                  <div class="feat">
+                    <p>Con veneno?<p>
+                  </div>  
+                </section>  
               </div>
-              </section>
-              <section class="info_2">
-                <div>
-                <img src="./assets/Info3.jpg" alt="">
-              </div>
-              </section>
-              <iframe
-                class="info_trailer"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/mULxmRiHW_k"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <section class="info_poster">
-                <img src="./assets/poster.jpg" alt="">
-              </section>
             </div>
+            <div class="titulo_div_trailer"><h2 class="titulo">Trailer</h2></div>
+            <div class="trailer">
+              <div class="trailer_borde">
+                <iframe src="https://www.youtube.com/embed/lsX_K5QFq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="titulo_div"><h2 class="titulo">Personajes</h2></div>
             <div class="presentacion">
               <div class="logo">
                 <img src="./assets/Lasso-Quien_alpha.png" alt="">
               </div>
-                <div class="card_contenedor">
+                <div class="card_contenedor" id="personajes">
                   <section class="card">
                     <div class="card_imagen"><img class="card_personaje" src="./assets/1detectives.jpg" alt=""></div>
                     <div class="card_info">
@@ -111,15 +131,21 @@
                       <p>Es responsable y diligente. Tiende a explotar cuando se frustra. Los otros empleados le tienen un poco de miedo.</p></div>
                   </section>
                   <section class="card">
-                    <div class="card_imagen"><img class="card_personaje" src="./assets/quien.png" alt=""></div>
+                    <div class="card_imagen"><img class="card_personaje" src="./assets/Esposo.jpeg" alt=""></div>
                     <div class="card_info">
-                      <h2>?</h2>
+                      <h2>El esposo</h2>
                       <p>?</p></div>
                   </section>
                   <section class="card">
-                    <div class="card_imagen"><img class="card_personaje" src="./assets/quien.png" alt=""></div>
+                    <div class="card_imagen"><img class="card_personaje" src="./assets/guardia.jpeg" alt=""></div>
                     <div class="card_info">
-                      <h2>?</h2>
+                      <h2>El guardia de seguridad</h2>
+                      <p>?</p></div>
+                  </section>
+                  <section class="card">
+                    <div class="card_imagen"><img class="card_personaje" src="./assets/chofer.jpeg" alt=""></div>
+                    <div class="card_info">
+                      <h2>El Chofer</h2>
                       <p>?</p></div>
                   </section>
                   <section class="card">
@@ -130,11 +156,32 @@
                   </section>
                 </div>
             </div>
-            <div class="entradas">
-              <h2>Entradas</h2>
-              <p>Lorem ipsum dolor sit amet.</p>
+            <div class="titulo_div"><h2 class="titulo">Boletos</h2></div>
+            <div class="boletos" id="boletos">
+              <section class="boletos_contenedor basico">
+                <div class="boletos_card normal">
+                  <div class="boletos_top">
+                    <h2>General</h2>
+                  </div>
+                  <p class="boletos_precio">20$</p>
+                  <p class="boletos_descripcion">Podrás disfrutar del primer concierto jugable.</p>
+                  <a href="https://www.goliiive.com/lasso-presenta-quien-mato-a-agatha-hall" target="_blank" class="boletos_link"><span>¡</span>Comprar<span>!</span></a>
+                </div>
+                </section>
+                <section class="boletos_contenedor vip">
+                  <div class="boletos_card vip">
+                    <div class="boletos_top">
+                      <h2>VIP</h2>
+                    </div>
+                    <p class="boletos_precio">30$</p>
+                   <p class="boletos_descripcion">Concierto + Zoom After Party + Saludo personalizado de Lasso.</p>
+                   <a href="https://www.goliiive.com/lasso-presenta-quien-mato-a-agatha-hall" target="_blank" class="boletos_link"><span>¡</span>Comprar<span>!</span></a>
+                  </div>
+                  </section>
             </div>
             <div class="multimedia">
+            <div class="musica" id="musica">
+              <h2 class="titulo">Lassotify</h2>
               <iframe
                 src="https://open.spotify.com/embed/album/6Ur6AsWdJDIdihiDWqNz7m"
                 width="100%"
@@ -143,55 +190,48 @@
                 allowtransparency="true"
                 allow="encrypted-media"
               ></iframe>
+            </div>
               <section class="grams">
-                <h2>Lassograms</h2>
-                <img src="https://source.unsplash.com/random/201x201" alt="" />
-                <img src="https://source.unsplash.com/random/202x202" alt="" />
-                <img src="https://source.unsplash.com/random/203x203" alt="" />
-                <img src="https://source.unsplash.com/random/204x204" alt="" />
-                <img src="https://source.unsplash.com/random/205x205" alt="" />
-                <img src="https://source.unsplash.com/random/206x206" alt="" />
-                <img src="https://source.unsplash.com/random/207x207" alt="" />
-                <img src="https://source.unsplash.com/random/207x208" alt="" />
-                <img src="https://source.unsplash.com/random/207x209" alt="" />
-                <img src="https://source.unsplash.com/random/207x210" alt="" />
+                <h2 class="titulo">Lassograms</h2>
+                <img src="./assets/lasso1.jpg" alt="" />
+                <img src="./assets/lasso2.jpg" alt="" />
+                <img src="./assets/lasso3.jpg" alt="" />
+                <img src="./assets/lasso4.jpg" alt="" />
+                <img src="./assets/lasso5.jpg" alt="" />
+                <img src="./assets/lasso6.jpg" alt="" />
+                <img src="./assets/lasso7.jpg" alt="" />
+                <img src="./assets/lasso8.jpg" alt="" />
+                <img src="./assets/lasso9.jpg" alt="" />
               </section>
             </div>
-        <div class="subscribe">
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="Subscribete a nuestro newsletter"
-          />
-        </div>
+            <div class="titulo_div_c"><h2 class="titulo">Contacto</h2></div>
         <footer>
-          <div class="contact">
-            <section class="contact-lasso">
+          <div class="contact_contenedor">
+            <section class="contact contact-lasso">
               <h2>Lasso</h2>
               <ul>
-                <li><a href=""><i class="fab fa-instagram-square"></a></i></li>
-                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/lassomusica/" target="_blank"><i class="fab fa-instagram-square fa-3x black"></a></i></li>
+                <li><a href="https://twitter.com/LassoMusica" target="_blank"><i class="fab fa-twitter-square fa-3x black"></i></a></li>
+                <li><a href="https://www.facebook.com/lassomusica" target="_blank"><i class="fab fa-facebook-square fa-3x black"></i></a></li>
               </ul>
             </section>
-            <section class="contact-me">
-              <h2>Diseño por <span>RCampelo</span></h2>
+            <section class="contact contact-me">
+              <h2>Diseño web por <span>Ricardo Campelo</span></h2>
               <ul>
-                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fab fa-github-square"></i></a></li>
-                <li><a href=""><i class="fab fa-codepen"></i></a></li>
-                <li><a href=""><i class="fas fa-envelope-square"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ricardo-campelo/" target="_blank"><i class="fab fa-linkedin fa-3x black"></i></a></li>
+                <li><a href="https://github.com/rc-coder" target="_blank"><i class="fab fa-github-square fa-3x black"></i></a></li>
+                <li><a href="https://codepen.io/Reisender" target="_blank"><i class="fab fa-codepen fa-3x black"></i></a></li>
+                <li><a href="mailto:rcrd.campelo@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-3x black"></i></a></li>
+                <li><a href="https://www.instagram.com/rc.campelo/" target="_blank"><i class="fab fa-instagram-square fa-3x black"></i></a></li>
               </ul>
             </section>
           </div>
           <div class="derechos">
-            <p>Todas las imagenes y musica pertenecen a <a href="">Lasso</a>.</p>
             <p>
               Este es un diseño web hecho por Ricardo Campelo como proyecto
               integrador para Nucba, sin fines comerciales.
             </p>
+            <p>Todas las imagenes y musica pertenecen a Lasso y Universal Music.</p>
           </div>
         </footer>
     </div>
