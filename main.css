@@ -39,6 +39,7 @@ body {
   min-height: calc(100vh - 100px);
   background-attachment: fixed;
   letter-spacing: -1px;
+  margin: 0;
 }
 
 h1,
@@ -75,4 +76,11 @@ li {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(27, 26, 23, 1) 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }

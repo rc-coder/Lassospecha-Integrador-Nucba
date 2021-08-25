@@ -1,8 +1,7 @@
 /* Nav */
 .navbar {
   display: grid;
-  padding: 0;
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: 1fr 500px;
   background: var(--cream);
   top: 0;
   width: 100%;
@@ -257,6 +256,7 @@
 .info_texto h2,
 .info_texto p {
   color: black;
+  line-height: 0.9;
 }
 
 .info_texto h2 {
@@ -370,7 +370,7 @@
 
 .grams img {
   width: 150px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .grams h2 {
