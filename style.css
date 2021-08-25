@@ -45,10 +45,9 @@
 
 .navbar .nav_log {
   display: grid;
-  grid-gap: 10px;
   padding: 0;
-  grid-template-columns: 1fr 0.5fr;
-  justify-content: flex-end;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   border-left: 2px solid var(--marron-oscuro);
 }
 
