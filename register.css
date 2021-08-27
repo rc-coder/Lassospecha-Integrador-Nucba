@@ -1,0 +1,168 @@
+/* background */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--naranja);
+  background-image: linear-gradient(
+      90deg,
+      rgba(27, 26, 23, 0.7),
+      rgba(218, 105, 0, 0.4)
+    ),
+    url(./assets/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+/* wrap */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  header img {
+    width: 50px;
+  }
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* form */
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register h2 span {
+  font-family: "Permanent Marker", cursive;
+  transition: all 0.4s ease-out;
+  font-size: 2rem;
+  /* color: #000; */
+}
+
+.register h2 span:hover {
+  color: var(--naranja);
+  font-size: 3rem;
+}
+
+form {
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--cream);
+  box-sizing: border-box;
+  max-width: 460px;
+  width: 100%;
+}
+
+.form-container h1 {
+  background: var(--naranja);
+  width: 100%;
+  padding: 13px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  line-height: 2rem;
+  width: 100%;
+}
+
+.form-div .campo {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.form-div .descripcion {
+  color: var(--marron-oscuro);
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.form-div section label {
+  font-size: 1.2rem;
+}
+
+.form-container a {
+  color: var(--naranja);
+}
+
+.form-div .caja {
+  padding: 10px;
+  width: 100%;
+}
+
+.form-div .newsletter .no {
+  margin-left: 10px;
+}
+
+.form-container .form-footer p {
+  font-size: 1.2rem;
+  color: #000;
+  padding: 20px;
+}
+
+.form-div .btn {
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  background: var(--naranja);
+  width: 100%;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+}
+
+.form-div .btn:hover {
+  background: rgba(218, 105, 0, 1);
+}
+
+/* footer */

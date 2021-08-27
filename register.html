@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lassospecha</Lassospecha-register></title>
+    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bf9c3d7310.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="./assets/Lasso-Quien.png" alt="" />
+      </header>
+      <section class="register">
+        <div class="form-container">
+          <h1>Registrate</h1>
+          <form>
+            <div class="form-div">
+              <label for="Usuario" class="campo">Usuario:</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Tu Usuario"
+                required
+                maxlength="10"
+                class="caja"
+              />
+              <p class="descripcion">Tu nombre de detective para el juego.</p>
+            </div>
+            <div class="form-div">
+              <label for="email" class="campo">Email:</label>
+              <input
+                name="email"
+                type="email"
+                placeholder="E-mail"
+                class="caja"
+                required
+              />
+              <p class="descripcion">Verificaremos tu email.</p>
+            </div>
+            <div class="form-div">
+              <label for="contraseña" class="campo">Contraseña:</label>
+              <input
+                name="contraseña"
+                type="password"
+                placeholder="********"
+                required
+                class="caja"
+              />
+              <p class="descripcion">Ya sabes, una contraseña segura.</p>
+            </div>
+            <div class="form-div">
+              <p class="campo" for="newsletter">
+                ¿Te gustaría subscribirte a nuestro Newsletter?:
+              </p>
+              <section class="newsletter">
+                <span>
+                  <input name="newsletter" type="radio" value="si" checked />
+                  <label for="si"> Si</label>
+                </span>
+                <span class="no">
+                  <input name="newsletter" type="radio" value="no" />
+                  <label for="no"> No</label>
+                </span>
+              </section>
+            </div>
+            <div class="form-div">
+              <label class="campo">Términos y condiciones:</label>
+              <section>
+                <input type="checkbox" name="condiciones" />
+                <label class="terminos" for="condiciones">
+                  He leído y acepto, todos los
+                  <a href="#"> términos y condiciones</a> de este sitio
+                  web.</label
+                >
+              </section>
+            </div>
+            <div class="form-div">
+              <input type="submit" value="Crear cuenta" class="btn" />
+            </div>
+          </form>
+          <div class="form-footer">
+            <p>¿Ya te has registrado? Ingresa <a href="">aquí</a></p>
+          </div>
+        </div>
+        <h2>Diseño web por <span>Ricardo Campelo</span></h2>
+      </section>
+    </div>
+  </body>
+</html>
