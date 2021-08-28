@@ -102,16 +102,6 @@ form {
   color: #000;
 }
 
-.form-div .descripcion {
-  color: var(--marron-oscuro);
-  font-weight: 800;
-  font-size: 1rem;
-}
-
-.form-div section label {
-  font-size: 1.2rem;
-}
-
 .form-container a {
   color: var(--naranja);
 }
@@ -119,10 +109,6 @@ form {
 .form-div .caja {
   padding: 10px;
   width: 100%;
-}
-
-.form-div .newsletter .no {
-  margin-left: 10px;
 }
 
 .form-container .form-footer p {
@@ -147,21 +133,34 @@ form {
   background: rgba(218, 105, 0, 1);
 }
 
+.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.check label,
+.check p {
+  color: grey;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
 /* footer */
 
-.register {
+.login {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.register h2 span {
+.login h2 span {
   font-family: "Permanent Marker", cursive;
   transition: all 0.4s ease-out;
   font-size: 2rem;
 }
 
-.register h2 span:hover {
+.login h2 span:hover {
   color: var(--naranja);
   font-size: 3rem;
 }
