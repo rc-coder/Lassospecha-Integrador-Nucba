@@ -276,7 +276,8 @@
 .info_features {
   margin-top: 200px;
   display: grid;
-  grid-template-columns: 100px 330px;
+  /* grid-template-columns: 100px 330px; */
+  grid-template-columns: 80px 310px;
   margin: 10px 90px 70px 90px;
   background: var(--cream);
   border: 3px solid #000;
